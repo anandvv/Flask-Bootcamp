@@ -12,7 +12,7 @@ def index():
 def puppy_name(name):
     # Pass in a puppy name
     # We insert it to the html with jinja2 templates!
-    return render_template('01-Template-Variables.html',name=name)
+    return render_template('01-BasicTemplate-Variables.html',foo=name)
 
 @app.route('/advpuppy/<name>')
 def adv_puppy_name(name):
