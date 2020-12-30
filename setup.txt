@@ -17,3 +17,21 @@ Setup instructrions:
 	autocomplete-python
 	platformio-ide-terminal
 
+6. On Windows add conda scripts to the Path System variables
+	on file explorer -> right click "my computer"
+		Advanced System Settings
+			Environment Variables
+				System Variables
+					Path -> new
+						C:\Users\anand\anaconda3
+						C:\Users\anand\anaconda3\Scripts
+						C:\Users\anand\anaconda3\Library\bin
+
+7. setup your virtual environment
+	conda create -n <mynewflaskenv> python=3.9
+
+8. Initiate the new virtual environment and install course packages
+	activate mynewflaskenv
+	pip install -r requirements.txt
+
+ 
