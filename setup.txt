@@ -1,0 +1,19 @@
+Setup instructrions:
+
+1. Download the course notes and zip file and extract to a folder under Documents/Github
+
+2. Install Git
+	https://git-scm.com/download/win
+		
+3. Install Anaconda
+	https://repo.anaconda.com/archive/Anaconda3-2020.11-Windows-x86_64.exe
+	Optional reading material:
+		https://www.anaconda.com/products/individual/installation-success?source=win_installer
+
+4. Install Atom
+	https://www.atom.io
+
+5. Install the following Atom packages:
+	autocomplete-python
+	platformio-ide-terminal
+
