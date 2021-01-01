@@ -34,4 +34,38 @@ Setup instructrions:
 	activate mynewflaskenv
 	pip install -r requirements.txt
 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
  
+==================================
+SQLAlchemy setup and using the ORM
+==================================
+
+Install the needed packages
+
+>>pip install Flask-SQLAlchemy
+This installs the package needed for Flask to talk to the ORM
+
+>>pip install Flask-Migrate
+This allows you to run the migration scripts below
+
+Step 1: Set the FLASK_APP environment Variable
+MacOS/Linux 
+>>export FLASK_APP=myapp.py
+OR
+Windows
+>>set FLASK_APP=myapp.py
+
+>>flask db init
+Sets up the migrations directory	
+
+>>flask db migrate -m “some message”
+Sets up the migration file
+
+>>flask db upgrade
+Updates the database with the migration
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
