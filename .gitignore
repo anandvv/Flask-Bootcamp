@@ -65,6 +65,10 @@ db.sqlite3-journal
 instance/
 .webassets-cache
 
+# Flask Alchemy stuff:
+migrations/
+*.sqlite
+
 # Scrapy stuff:
 .scrapy
 
@@ -127,3 +131,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+05-Databases/05-Exercise/data.sqlite
