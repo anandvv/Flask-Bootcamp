@@ -14,10 +14,7 @@ def add():
 
     if form.validate_on_submit():
         name = form.name.data
-        #pup_id = form.pup_id.data
-        pup_id = form.puppies.data
-        print("Puppy Name: {}".format(name))
-        print("Puppy Id: {}".format(pup_id))
+        pup_id = form.pup_id.data
         # Add new owner to database
         new_owner = Owner(name,pup_id)
         db.session.add(new_owner)

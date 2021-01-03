@@ -1,13 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="jumbotron">
-  <h1>Add an owner</h1>
-  <p>Add a new owner with the form below:</p>
+  <h1>Have a puppy that needs to be adopted?</h1>
+  <p>Add a new puppy with the form below:</p>
   <form method="POST">
       {# This hidden_tag is a CSRF security feature. #}
       {{ form.hidden_tag() }}
-      {{ form.name.label }} {{ form.name() }}<br>
-      {{ form.puppies.label }} {{ form.puppies() }}<br>
+      {{ form.name.label }} {{ form.name() }}
       {{ form.submit() }}
   </form>
 </div>
