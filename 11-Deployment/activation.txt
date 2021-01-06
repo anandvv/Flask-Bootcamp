@@ -1,0 +1,39 @@
+activate flaskdeploy
+
+pip install gunicorn
+
+pip freeze > requirements.txt
+
+install heroku CLI (google this)
+
+goto heroku website, login and create a new app. Once you do that you'll get the instructions like below. (Save it)
+
+=============================
+
+Install the Heroku CLI - DONE
+
+Download and install the Heroku CLI. - DONE
+
+If you haven't already, log in to your Heroku account and follow the prompts to create a new SSH public key.
+
+$ heroku login
+Create a new Git repository
+Initialize a git repository in a new or existing directory
+
+$ cd my-project/
+$ git init
+$ heroku git:remote -a my-flask-deploy-dem-app
+
+Deploy your application
+
+Commit your code to the repository and deploy it to Heroku using Git.
+
+$ git add .
+$ git commit -am "make it better"
+$ git push heroku main
+
+You can now change your main deploy branch from "master" to "main" for both manual and automatic deploys, please follow the instructions here.
+Existing Git repository
+For existing repositories, simply add the heroku remote
+
+$ heroku git:remote -a my-flask-deploy-dem-app
